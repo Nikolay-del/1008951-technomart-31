@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Николай Угольников](https://up.htmlacademy.ru/htmlcss/31/user/1008951).
-* Наставник: [Олег Цыганов] (https://htmlacademy.ru/profile/olegtsyganov).
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
