@@ -66,7 +66,8 @@
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Цена:</legend>
-          <input type="range">
+          <input type="range" min="0" max="30000" id="price" name="price">
+          <label for="price">Цена</label>
           <input type="text" id="min-price" value="0">
           <label for="min-price"></label>
           <span>-</span>
@@ -280,7 +281,7 @@
       </ul>
     </section>
     <section>
-      <h2>Пара слов о префораторах</h2>
+      <h2>Пара слов о пефораторах</h2>
       <p>
         Перфоратор — универсальный строительный инструмент. Предназначен для
         сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
@@ -333,7 +334,7 @@
         <ul>
           <li>
             <p>Обратная связь:</p>
-            <a href="emailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li>
             <p>Разработано —</p>
@@ -343,11 +344,9 @@
       </section>
     </footer>
   </main>
-  <!-- Добавить ПОП ИТ (popup) -->
-
   <section>
-    <button><img src="image/icon-close.svg" alt="Крестик" width="66" height="66"></button>
-    <img src="image/icon-mark.png" alt="Товар в корзине">
+    <button><img src="image/icon-close.svg" alt="Крестик" width="21" height="21"></button>
+    <img src="image/icon-mark.png" alt="Товар в корзине" width="66" height="66">
     <h2>Товар добавлен в корзину!</h2>
     <ul>
       <li><button type="button">Оформить заказ</button></li>
