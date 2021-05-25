@@ -4,7 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт. Главная страница</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -12,22 +16,38 @@
     <div>
       <a>Техномарт</a>
       <form>
+        <label for="search"><img src="image/icon-search.svg" alt="Иконка поиска" width="17" height="17"></label>
         <input type="search" id='search' placeholder="Поиск:">
-        <label for="search">Форма поиска</label>
       </form>
       <ul>
-        <li><a href="#">Закладки: 0</a></li>
-        <li><a href="#">Корзина: 0</a>
-        <li><a href="#">Оформить заказ</a></li>
+        <li>
+          <a href="#">
+            <img src="image/icon-bookmarks.svg" alt="Иконка закладок" width="14" height="16">
+            Закладки: 0</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="image/icon-cart.svg" alt="Иконка корзины" width="15" height="15">
+            Корзина: 0
+          </a>
+        <li>
+          <a href="#">Оформить заказ</a>
+        </li>
       </ul>
-    
+
     </div>
     <div>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
+      <a href="tel:+78005558628">
+        <img src="image/icon-phone.svg" alt="Телефон:" width="19" height="19">
+        +7 800 555-86-28</a>
       <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
       <ul>
-        <li><a href="#">Войти</a></li>
+        <li><a href="#">
+            <img src="image/index/icon-login.svg" alt="Иконка входа">
+            Войти
+          </a>
+        </li>
         <li><a href="#">Регистрация</a></li>
       </ul>
     </div>
@@ -51,43 +71,45 @@
           <h3>Материалы</h3>
           <span>NEW</span>
           <a href="#">На любой вкус</a>
-          <img src="image/materials.png" alt="Материалы" width="44" height="65">
+          <img src="image/index/materials.svg" alt="Иконка материалов" width="44" height="65">
         </li>
         <li>
           <h3>Инструмент</h3>
           <a href="#">На все случаи</a>
-          <img src="image/tools.png" alt="Инструменты" width="75" height="61">
+          <img src="image/index/tools.svg" alt="Иконка инструментов" width="75" height="61">
         </li>
         <li>
           <h3>Техника</h3>
           <a href="#">Для стройки</a>
-          <img src="image/technic.png" alt="Техника" width="78" height="62">
+          <img src="image/index/technic.svg" alt="Иконка техники" width="78" height="62">
         </li>
         <li>
           <h3>Скидки 50%</h3>
           <a href="#">На 350 товаров</a>
-          <img src="image/discounts.png" alt="Скидки 50%" width="59" height="72">
+          <img src="image/index/discounts.svg" alt="Иконка скидки" width="59" height="72">
         </li>
         <li>
           <h3>Доставка</h3>
           <a href="#">Бесплатно</a>
-          <img src="image/delivery.png" alt="Доставка" width="78" height="63">
+          <img src="image/index/delivery.svg" alt="Иконка доставки" width="78" height="63">
         </li>
       </ul>
       <div>
-        <button type="button"><img src="image/icon-left.svg" alt="Стрелочка налево" width="22" height="40"></button>
-        <button type="button"><img src="image/icon-right.svg" alt="Стрелочка направо" width="22" height="40"></button>
+        <button type="button"><img src="image/index/icon-left.svg" alt="Стрелочка налево" width="22"
+            height="40"></button>
+        <button type="button"><img src="image/index/icon-right.svg" alt="Стрелочка направо" width="22"
+            height="40"></button>
         <ul>
           <li>
             <h2>Перфораторы</h2>
             <p>Настоящие мужские игрушки</p>
-            <img src="image/slider-perforator.jpg" alt="Перфораторы" width="620" height="266">
+            <img src="image/index/slider-perforator.jpg" alt="Перфораторы" width="620" height="266">
             <a href="#">Открыть каталог</a>
           </li>
           <li>
             <h2>Дрели</h2>
             <p>Соседям на радость!</p>
-            <img src="image/slider-drill.jpg" alt="Дрели" width="620" height="266">
+            <img src="image/index/slider-drill.jpg" alt="Дрели" width="620" height="266">
             <a href="#">Открыть каталог</a>
           </li>
         </ul>
@@ -101,7 +123,8 @@
       <ul>
         <li>
           <h4>Перфоратор BOSCH BFG 9000</h4>
-          <img src="image/bfg9000.png" alt="BOSCH BFG 9000" width="184" height="164">
+          <img src="image/index/bfg9000.png" alt="Синий перфоратор Bosch bfg9000 с длинным сверлом" width="184"
+            height="164">
           <span>32500 Р.</span>
           <p>25500 Р.</p>
           <ul>
@@ -116,7 +139,8 @@
         </li>
         <li>
           <h4>Перфоратор BOSCH BFG 3000</h4>
-          <img src="image/bfg3000.png" alt="BOSCH BFG 3000" width="184" height="164">
+          <img src="image/index/bfg3000.png" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="184"
+            height="164">
           <span>32500 Р.</span>
           <p>25500 Р.</p>
           <ul>
@@ -132,7 +156,8 @@
         <li>
           <span>NEW</span>
           <h4>Перфоратор BOSCH BFG 6000</h4>
-          <img src="image/bfg6000.png" alt="BOSCH BFG 6000" width="127" height="112">
+          <img src="image/index/bfg6000.png" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="127"
+            height="112">
           <span>30500 Р.</span>
           <p>25500 Р.</p>
           <ul>
@@ -148,7 +173,8 @@
         <li>
           <span>NEW</span>
           <h4>Перфоратор BOSCH BFG 2000</h4>
-          <img src="image/bfg9000.png" alt="BOSCH BFG 9000" width="184" height="164">
+          <img src="image/index/bfg2000.png" alt="Синий перфоратор BOSCH BFG 2000 с коротким сверлом" width="184"
+            height="164">
           <span>22500 Р.</span>
           <p>12500 Р.</p>
           <ul>
@@ -171,42 +197,42 @@
       <ul>
         <li>
           <a href="#">
-            <img src="image/bosch.png" alt="Bosch" width="126" height="37">
+            <img src="image/index/bosch.png" alt="Bosch" width="126" height="37">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="image/makita.png" alt="Makita" width="123" height="40">
+            <img src="image/index/makita.png" alt="Makita" width="123" height="40">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="image/dewalt.png" alt="Dewalt" width="146" height="44">
+            <img src="image/index/dewalt.png" alt="Dewalt" width="146" height="44">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="image/интерскол.png" alt="Интерскол" width="200" height="75">
+            <img src="image/index/interskol.png" alt="Интерскол" width="200" height="75">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="image/hitachi.png" alt="Hitachi" width="169" height="31">
+            <img src="image/index/hitachi.png" alt="Hitachi" width="169" height="31">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="image/lg.png" alt="LG" width="121" height="73">
+            <img src="image/index/lg.png" alt="LG" width="121" height="73">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="image/aeg.png" alt="AEG" width="151" height="98">
+            <img src="image/index/aeg.png" alt="AEG" width="151" height="98">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="image/metado.png" alt="metado" width="206" height="73">
+            <img src="image/index/metado.png" alt="metado" width="206" height="73">
           </a>
         </li>
       </ul>
@@ -225,20 +251,20 @@
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
           <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          <img src="image/btn-delivery.png" alt="Доставка" width="468" height="261">
+          <img src="image/index/btn-delivery.png" alt="Доставка" width="468" height="261">
         </li>
         <li>
           <h3>Гарантия</h3>
           <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
             возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
           <p>Дом уж восстановите как-нибудь сами.</p>
-          <img src="image/btn-gurantee.png" alt="Гарантия" width="389" height="283">
+          <img src="image/index/btn-gurantee.png" alt="Гарантия" width="389" height="283">
         </li>
         <li>
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! </p>
           <p>Кредитные консультанты придут вам на помощь.</p>
-          <img src="image/btn-credit.png" alt="Кредит" width="465" height="285">
+          <img src="image/index/btn-credit.png" alt="Кредит" width="465" height="285">
           <button type="button">Отправить заявку</button>
         </li>
       </ul>
@@ -308,7 +334,7 @@
       <ul>
         <li>
           <p>Обратная связь:</p>
-          <a href="emailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li>
           <p>Разработано —</p>
@@ -320,7 +346,7 @@
   <section>
     <h2>Обратная связь</h2>
     <button>
-      <img src="image/icon-close.svg" alt="Крестик" width="21" height="21">
+      <img src="image/icon-close.svg" alt="Закрыть" width="21" height="21">
     </button>
     <form action="https://echo.htmlacademy.ru" method="post">
       <label for="name">Ваше имя:</label>
@@ -333,4 +359,5 @@
     <button type="button">Отправить</button>
   </section>
 </body>
+
 </html>
