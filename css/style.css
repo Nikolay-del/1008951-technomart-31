@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum Regular"), local("Cuprum-Regular"), url("../fonts/cuprum.woff") format("woff"), url("../fonts/cuprum.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum Bold"), local("Cuprum-Bold"), url("../fonts/cuprumbold.woff") format("woff"), url("../fonts/cuprumbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum Italic"), local("Cuprum-Italic"), url("../fonts/cuprumitalic.woff") format("woff"), url("../fonts/cuprumitalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"), url("../fonts/cuprumbolditalic.woff") format("woff"), url("../fonts/cuprumbolditalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans Regular"), local("PTSans-Regular"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63a63e;
+  --basic-icon: #b7bfc8;
+  --basic-neutral: #e5e5e5;
+  --basic-white: #ffffff;
+  --basic-yellow: #ffbf47;
+  --basic-blue: #3bbce3;
+  --basic-pink: #dc91d8;
+  --basic-light-green: #8ed78f;
+  --basic-dark-blue: #32425c;
+
+}
+
+
+
