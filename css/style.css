@@ -51,13 +51,6 @@
   --basic-pink: #dc91d8;
   --basic-light-green: #8ed78f;
   --basic-dark-blue: #32425c;
-<<<<<<< Updated upstream
-
-}
-
-
-
-=======
   --basic-background: #f1f5f7;
   --basic-black: #000;
   --basic-very-dark-blue: #293449;
@@ -547,4 +540,3 @@ input[type="search"]::placeholder {
 .modal-feedback div {
   background: #f4f4f4;
 }
->>>>>>> Stashed changes
