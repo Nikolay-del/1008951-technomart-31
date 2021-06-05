@@ -153,7 +153,7 @@ input[type="search"]::placeholder {
 .nav-profile a:active {
   background: #161D29;
   color: #FFFFFF;
-  opacity: 0,5;
+  opacity: 0, 5;
 }
 
 .cart-catalog {
@@ -416,7 +416,7 @@ input[type="search"]::placeholder {
   background: #5fbb2d;
 }
 
-.button-catalog-item button:active{
+.button-catalog-item button:active {
   background: #518534;
 }
 
@@ -433,11 +433,11 @@ input[type="search"]::placeholder {
   background: none;
 }
 
-.button-bookmarks button:hover{
+.button-bookmarks button:hover {
   border: 3px solid var(--basic-dark-blue);
 }
 
-.button-bookmarks button:active{
+.button-bookmarks button:active {
   border: 3px solid var(--basic-dark-blue);
   opacity: 0.5;
 }
@@ -553,11 +553,11 @@ input[type="search"]::placeholder {
   list-style-type: none;
 }
 
-.nav-footer a:hover{
+.nav-footer a:hover {
   text-decoration: underline;
 }
 
-.nav-footer a:active{
+.nav-footer a:active {
   text-decoration: underline;
   opacity: 0.5;
 }
@@ -571,11 +571,11 @@ input[type="search"]::placeholder {
   color: var(--basic-yellow-footer);
 }
 
-.index-nav a:hover{
+.index-nav a:hover {
   text-decoration: underline;
 }
 
-.index-nav a:active{
+.index-nav a:active {
   opacity: 0.5;
 }
 
@@ -611,11 +611,11 @@ input[type="search"]::placeholder {
   color: var(--basic-yellow-footer);
 }
 
-.contact-info a:hover{
+.contact-info a:hover {
   text-decoration: underline;
 }
 
-.contact-info a:active{
+.contact-info a:active {
   text-decoration: none;
   color: var(--basic-red);
 }
@@ -738,15 +738,15 @@ input[type="search"]::placeholder {
 
 }
 
-.page-nav a:hover{
+.page-nav a:hover {
   border: 1px solid var(--basic-icon);
 }
 
-.page-nav a:active{
+.page-nav a:active {
   border: 1px solid var(--basic-red);
 }
 
-.page-nav a:focus{
+.page-nav a:focus {
   background: var(--basic-red);
 }
 
@@ -816,7 +816,7 @@ input[type="search"]::placeholder {
   fill: var(--basic-icon);
 }
 
-.but-up-down button:hover{
+.but-up-down button:hover {
   fill: var(--basic-black);
 }
 
@@ -847,7 +847,7 @@ input[type="search"]::placeholder {
 }
 
 
-.but-sort button:hover{
+.but-sort button:hover {
   color: var(--basic-black);
   border-bottom: 1px solid var(--basic-red);
 }
@@ -862,11 +862,10 @@ input[type="search"]::placeholder {
   transform: rotate(-180deg);
 }
 
-.btn-social-circle{
+.btn-social-circle {
   fill: #212A3A;
 }
 
-.btn-social:hover .btn-social-circle{
+.btn-social:hover .btn-social-circle {
   fill: var(--basic-red);
 }
-
