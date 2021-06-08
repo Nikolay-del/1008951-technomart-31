@@ -71,11 +71,9 @@ body {
   line-height: 24px;
   font-weight: 400;
   background-color: var(--basic-white);
-  /*
   display: grid;
   min-height: 100%;
   grid-template-rows: 320px 1fr 300px;
-   */
 }
 
 a {
@@ -118,7 +116,7 @@ img {
 }
 
 .logo:active {
-  background: #BA2732;1
+  background: #BA2732;
 }
 
 .search {
