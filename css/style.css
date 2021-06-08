@@ -71,11 +71,25 @@ body {
   line-height: 24px;
   font-weight: 400;
   background-color: var(--basic-white);
+  /*
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 320px 1fr 300px;
+   */
 }
 
 a {
   text-decoration: none;
   color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
 }
 
 .visually-hidden {
@@ -98,7 +112,14 @@ a {
   background-color: var(--basic-background);
 }
 
-.logo {}
+.logo {
+  background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.logo:active {
+  background: #BA2732;1
+}
 
 .search {
   border: 0px;
@@ -109,15 +130,16 @@ a {
   fill: var(--basic-white);
 }
 
+.search:hover {
+  background: none;
+}
+
 
 .search input:focus+svg {
   fill: var(--basic-red);
 }
 
-.search input:hover {
-  background: var(--basic-white);
-  color: var(--basic-black);
-}
+
 
 
 input[type="search"] {
@@ -138,22 +160,37 @@ input[type="search"]::placeholder {
   list-style-type: none;
 }
 
-.nav-profile li:hover svg {
+.bookmarks:hover svg {
   fill: var(--basic-white);
   opacity: 1;
 }
 
-.bookmarks {}
+.cart:hover svg {
+  fill: var(--basic-white);
+  opacity: 1;
+}
 
 .nav-profile svg {
   fill: var(--basic-white);
   opacity: 0.3;
 }
 
-.nav-profile a:active {
+.bookmarks:active {
   background: #161D29;
-  color: #FFFFFF;
-  opacity: 0, 5;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cart:active {
+  background: #161D29;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bookmarks:active svg {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.cart:active svg {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .cart-catalog {
@@ -203,15 +240,15 @@ input[type="search"]::placeholder {
   background-color: var(--basic-white);
 }
 
-.btn-user:hover a {
+.btn-user a:hover {
   color: var(--basic-red);
 }
 
-.btn-user:hover svg {
+.btn-user a:hover svg {
   fill: var(--basic-icon-blue);
 }
 
-.btn-user:active a {
+.btn-user a:active {
   color: var(--basic-icon);
 }
 
@@ -362,7 +399,7 @@ input[type="search"]::placeholder {
 }
 
 .name-product {
-  font-family: PTSans;
+  font-family: PTSans, Arial;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -372,7 +409,7 @@ input[type="search"]::placeholder {
 .catalog-item-image {}
 
 .price {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -382,7 +419,7 @@ input[type="search"]::placeholder {
 }
 
 .disc {
-  font-family: "PTSans";
+  font-family: PTSans, Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -446,7 +483,17 @@ input[type="search"]::placeholder {
   list-style-type: none;
 }
 
-.manufacturer {}
+.manufacturer {
+  border: 1px solid #EAEAEA;
+}
+
+.manufacturer a:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.manufacturer a:active {
+  opacity: 0.5;
+}
 
 .service {
   background: var(--basic-background);
@@ -467,7 +514,7 @@ input[type="search"]::placeholder {
 }
 
 .service-desc {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
@@ -501,10 +548,15 @@ input[type="search"]::placeholder {
   background: #293449;
 }
 
+.button-service-active {
+  background: var(--basic-white);
+  color: var(--basic-dark-blue);
+}
+
 .block-serivce {}
 
 .promo-info {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
@@ -522,7 +574,7 @@ input[type="search"]::placeholder {
 .contacts {}
 
 .office-map {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
@@ -631,7 +683,7 @@ input[type="search"]::placeholder {
 }
 
 .modal-feedback input {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -711,7 +763,7 @@ input[type="search"]::placeholder {
 }
 
 .breadcrumbs a {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -729,7 +781,7 @@ input[type="search"]::placeholder {
   border: 1px solid var(--basic-neutral);
   box-sizing: border-box;
   border-radius: 2px;
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -748,6 +800,7 @@ input[type="search"]::placeholder {
 
 .page-nav a:focus {
   background: var(--basic-red);
+  color: var(--basic-white)
 }
 
 .about-punchers {
@@ -759,7 +812,7 @@ input[type="search"]::placeholder {
   background: var(--basic-white);
   border: 1px solid var(--basic-neutral);
   box-sizing: border-box;
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -788,7 +841,7 @@ input[type="search"]::placeholder {
 }
 
 .manufacturers-catalog {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -798,7 +851,7 @@ input[type="search"]::placeholder {
 }
 
 .sorting h2 {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -830,7 +883,7 @@ input[type="search"]::placeholder {
 }
 
 .but-sort button {
-  font-family: PTSans;
+  font-family: PTSans, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
