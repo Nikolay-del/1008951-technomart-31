@@ -71,9 +71,11 @@ body {
   line-height: 24px;
   font-weight: 400;
   background-color: var(--basic-white);
+  /*
   display: grid;
   min-height: 100%;
   grid-template-rows: 320px 1fr 300px;
+  */
 }
 
 a {
@@ -115,7 +117,8 @@ img {
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-.logo:active {
+.logo:active,
+.logo-footer:active {
   background: #BA2732;
 }
 
@@ -212,6 +215,7 @@ input[type="search"]::placeholder {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
+  font-weight: normal;
   color: var(--basic-red);
 }
 
@@ -345,21 +349,30 @@ input[type="search"]::placeholder {
   background: var(--basic-yellow);
 }
 
-.slider {
-  visibility: hidden;
+.slider {}
+
+.btn-slider-left,
+.btn-slider-right {
+  border: none;
+  background: none;
 }
 
-.btn-slider-left {}
-
-.btn-slider-right {}
-
-.pages-slider {}
+.pages-slider {
+  list-style-type: none;
+}
 
 .slide {}
 
-.slider-title {}
+.slider-title {
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
 
-.slider-desc {}
+.slider-desc {
+  color: var(--basic-white);
+  font-size: 36px;
+  line-height: 36px;
+}
 
 .button {
   outline: none;
@@ -397,7 +410,7 @@ input[type="search"]::placeholder {
 }
 
 .name-product {
-  font-family: PTSans, Arial;
+  font-family: PTSans, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -546,7 +559,7 @@ input[type="search"]::placeholder {
   background: #293449;
 }
 
-.button-service-active {
+.button-service-active button {
   background: var(--basic-white);
   color: var(--basic-dark-blue);
 }
@@ -584,7 +597,11 @@ input[type="search"]::placeholder {
   background: var(--basic-dark-blue);
 }
 
-.logo-footer {}
+.logo-footer {
+  background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
 
 .footer-address {
   color: #f3f7f9;
@@ -891,7 +908,6 @@ input[type="search"]::placeholder {
 
 .but-sort button {
   border: 0px;
-  /* Я не знаю какую тут обвоку надо) */
   border-bottom: 1px dotted var(--basic-red);
   background: none;
 
