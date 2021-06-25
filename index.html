@@ -60,14 +60,18 @@
     </div>
     <div class="header-bottom container">
       <h1 class="desc">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
-      <a href="tel:+78005558628" class="phone">
-        <svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" class="icon-phone">
-          <path
-            d="M15.57 18.98h-.94a14.53 14.53 0 01-9.36-4.86 16.33 16.33 0 01-4.3-9.9V3.09c.09-.77.47-1.3.9-1.75C2.43.77 3.26.04 4 .02 4.56 0 5.5.4 5.88.92c.33.44.5 1.34.66 2 .15.67.5 1.64.4 2.29-.14 1-1.48 1.43-1.87 2.17a14.03 14.03 0 006.29 7.03c.71-.4 1.35-1.57 2.33-1.6.36 0 .82.18 1.19.29.4.12.74.27 1.1.4.6.23 1.65.53 2 1.03.37.51.57 1.35.5 1.88-.17 1.04-1.89 2.2-2.9 2.57z" />
-        </svg>
-        +7 800 555-86-28
-      </a>
-      <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+      <div class="contacts-header">
+        <div class="phone-header">
+          <a href="tel:+78005558628" class="phone">
+            <svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" class="icon-phone">
+              <path
+                d="M15.57 18.98h-.94a14.53 14.53 0 01-9.36-4.86 16.33 16.33 0 01-4.3-9.9V3.09c.09-.77.47-1.3.9-1.75C2.43.77 3.26.04 4 .02 4.56 0 5.5.4 5.88.92c.33.44.5 1.34.66 2 .15.67.5 1.64.4 2.29-.14 1-1.48 1.43-1.87 2.17a14.03 14.03 0 006.29 7.03c.71-.4 1.35-1.57 2.33-1.6.36 0 .82.18 1.19.29.4.12.74.27 1.1.4.6.23 1.65.53 2 1.03.37.51.57 1.35.5 1.88-.17 1.04-1.89 2.2-2.9 2.57z" />
+            </svg>
+            +7 800 555-86-28
+          </a>
+        </div>
+        <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+      </div>
       <ul class="user">
         <li class="btn-user btn-enter">
           <a href="#">
@@ -85,103 +89,111 @@
       </ul>
     </div>
     <nav class="nav container">
-      <ul>
-        <li class="nav-link nav-link-active"><a>Главная</a></li>
-        <li class="nav-link"><a href="#">Компания</a></li>
-        <li class="nav-link"><a href="catalog.html">Каталог</a></li>
-        <li class="nav-link"><a href="#">Новости</a></li>
-        <li class="nav-link"><a href="#">Спецпредложения</a></li>
-        <li class="nav-link"><a href="#">Доставка</a></li>
-        <li class="nav-link"><a href="#">Контакты</a></li>
+      <ul class="nav-ul">
+        <li><a class="nav-link">Главная</a></li>
+        <li><a href="#" class="nav-link">Компания</a></li>
+        <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+        <li><a href="#" class="nav-link">Новости</a></li>
+        <li><a href="#" class="nav-link">Спецпредложения</a></li>
+        <li><a href="#" class="nav-link">Доставка</a></li>
+        <li><a href="#" class="nav-link">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <section class="menu">
+  <main class="page-main">
+    <section class="menu container">
       <h2 class="visually-hidden">Меню</h2>
       <ul class="menu-ul">
         <li class="block-menu materials">
-          <h3 class="title-menu">Материалы</h3>
           <span class="new">NEW</span>
-          <a href="#" class="btn-menu">На любой вкус</a>
+          <h3 class="title-menu">Материалы</h3>
           <svg width="44" height="65" xmlns="http://www.w3.org/2000/svg" class="icon-menu">
             <path
               d="M37.91 30.44V41.3s.1 2.73-2.82 2.73c-3.07 0-3.13-2.73-3.13-2.73v-6.42c0-.24-.34-1.9-2.32-1.9-2.62 0-2.67 1.87-2.67 1.87v19.22s.03 1.86-2.46 1.86C22 55.94 22 53.96 22 53.96V40.02s0-2.95-3.8-2.95c-4.06 0-3.97 3.13-3.97 3.13v3.72s-.12 2.95-4.69 2.95-4.63-4.51-4.63-4.51V29.94C3.17 28.98 0 26.67 0 26.67V56s2.99 9 22 9c19.01 0 22-8.7 22-8.7V26.68c-2.94 2.83-6.09 3.77-6.09 3.77z" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M22 0C1.69 0 0 19.88 0 19.88v3.06C8.44 29.19 22 29 22 29s13.56.19 22-6.06v-3.06S42.31 0 22 0zm0 25c-11.75 0-14.31-2.38-14.31-2.38C13.94 19.75 22 19.88 22 19.88s8.06-.12 14.31 2.75c0 0-2.56 2.38-14.31 2.38zM4.31 15.56s8.13-2.94 17.69-2.94 17.69 2.94 17.69 2.94C35.13 2.62 22 3.06 22 3.06S8.87 2.62 4.31 15.56z" />
           </svg>
+          <a href="#" class="btn-menu">На любой вкус</a>
         </li>
         <li class="block-menu tools">
           <h3 class="title-menu">Инструмент</h3>
-          <a href="#" class="btn-menu">На все случаи</a>
           <svg width="75" height="61" xmlns="http://www.w3.org/2000/svg" class="icon-menu">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M2.1 0C.17 0 0 2.04 0 2.04v15.81c0 2.94 2.9 3 2.9 3h9.01c1.94 0 1.6 1.34 1.6 1.34s-2.47 13-2.73 15.21C10.5 39.6 8.9 41 8.9 41l-3 1.67c-.87.47-.87 2.2-.87 2.2h30.89v-.73c0-1.47-6.47-3.14-9.07-3.4-2.6-.27-2.07-2-2.07-2l1.06-7.81h3L30 23.06h-3l.33-2.74 8.6-.13c5.81-.6 10.02-4.07 10.02-4.07V4.1C41.34.84 33.99 0 33.99 0H2.1zM60.4 8.02h13.48c.58 0 1.05 1.1 1.05 2.48 0 1.37-.47 2.48-1.05 2.48H60.4c-.62 2.3-2.08 3.9-3.77 3.9h-7.54V4.13h7.55c1.69 0 3.14 1.6 3.76 3.89zM6.9 61c-1.87 0-1.87-2.05-1.87-2.05v-11h30.89v11.07c0 1.8-2 1.98-2 1.98H6.9zM36 4.97v-.03a1 1 0 00-1-1H5.03a1 1 0 00-1 1v.03a1 1 0 001 1H35a1 1 0 001-1z" />
           </svg>
+          <a href="#" class="btn-menu">На все случаи</a>
         </li>
         <li class="block-menu technic">
           <h3 class="title-menu">Техника</h3>
-          <a href="#" class="btn-menu">Для стройки</a>
           <svg width="78" height="62" xmlns="http://www.w3.org/2000/svg" class="icon-menu">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M0 45.88a16.13 16.13 0 1132.25 0 16.13 16.13 0 01-32.25 0zm10.96 5.16a7.3 7.3 0 1010.33-10.33 7.3 7.3 0 00-10.33 10.33zm49.9-5.17a8.06 8.06 0 100 16.13 8.06 8.06 0 000-16.13zm-5.07 8.07a5.06 5.06 0 1010.13 0 5.06 5.06 0 00-10.13 0z" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M75.44 31.31l2.46 18.42s.74 3.15-2.9 3.15h-1.95a12.22 12.22 0 00-24.39 0H38.5A23.44 23.44 0 003.05 26.43C3 23.45 3 12.52 5.3 6.16c0 0 1.07-2.54 3.44-3.17 2.38-.63 24.75-3 24.75-3s2.31.06 3.13 1.88c.8 1.8 10.56 21.87 10.56 21.87L59 25.13v-5.3h4V14h3v11.95l5.81.68s3.08.54 3.63 4.68zM16.13 19.83h6.95V6.17h-6.95v13.66zm16.95 0h-6.95V6.17h6.95v13.66zM49 36h4.02v-7H49v7zm11.02 0H56v-7h4.02v7zM63 36h4.02v-7H63v7z" />
           </svg>
+          <a href="#" class="btn-menu">Для стройки</a>
         </li>
         <li class="block-menu discounts">
           <h3 class="title-menu">Скидки 50%</h3>
-          <a href="#" class="btn-menu">На 350 товаров</a>
           <svg width="59" height="72" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-menu">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M58.34 21.25a3.01 3.01 0 00-2.4-1.18H17.27L14.8 12.8H3.06c-1.66 0-3 1.32-3 2.96a2.98 2.98 0 003 2.96h7.42l13.5 39.73h25.16c1.66 0 3-1.33 3-2.96a2.98 2.98 0 00-3-2.96H28.3l-1.73-5.08H49.7a3 3 0 002.89-2.14l6.25-21.45c.26-.9.08-1.86-.49-2.6zm-7.78 9.55h-4.81v-4.81h6.21l-1.4 4.8zm-17.62-4.81v4.8h6.8V26h-6.8zm6.8 10.73v4.8h-6.8v-4.8h6.8zm-12.8-5.92v-4.81h-7.66l1.64 4.8h6.02zm-4.01 5.92h4.01v4.8h-2.38l-1.63-4.8zm22.82 0v4.8h1.68l1.4-4.8h-3.08z" />
             <path
               d="M27.4 71.88c3.2 0 5.79-2.56 5.79-5.7 0-3.15-2.6-5.7-5.78-5.7a5.74 5.74 0 00-5.79 5.7c0 3.14 2.6 5.7 5.79 5.7zM44.84 71.88c3.2 0 5.78-2.56 5.78-5.7 0-3.15-2.58-5.7-5.78-5.7a5.74 5.74 0 00-5.78 5.7c0 3.14 2.6 5.7 5.78 5.7zM29.34 10.55l7.54 5.42a2 2 0 002.82-.49c.65-.92.43-2.2-.48-2.85l-2.37-1.7 9.43-5.03 4.63 11.85h4.35L49.2 2.28a2 2 0 00-2.82-1.06L33.15 8.27 30.12 6.1a2 2 0 00-2.74.38L18.9 17.13c-.17.19-.3.4-.4.62h5.1l5.73-7.2z" />
           </svg>
+          <a href="#" class="btn-menu">На 350 товаров</a>
         </li>
         <li class="block-menu delivery">
           <h3 class="title-menu">Доставка</h3>
-          <a href="#" class="btn-menu">Бесплатно</a>
           <svg width="78" height="63" xmlns="http://www.w3.org/2000/svg" class="icon-menu">
             <path d="M25.98 63a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM59.98 63a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M11.06 0H64s14 14.81 14 33.69v15.25S77.81 53 74.87 53h-1.7a13.5 13.5 0 00-26.52 0h-7.4a13.5 13.5 0 00-26.53 0h-2.1s-2.56-.62-2.56-3.81V33.57l14.75-.76s5.49-.6 6.3-3.75L5.44 27.8a3.37 3.37 0 110-6.75h9.05l8.31-.42s8.18-.61 8.94-3.8l-.2-.05-28.08-1.84a3.47 3.47 0 110-6.94h4.6V3.12S7.86 0 11.06 0zM52 8.94v15h15.81l-5.75-15H52z" />
           </svg>
+          <a href="#" class="btn-menu">Бесплатно</a>
         </li>
         <li class="slider">
-          <button type="button" class="btn-slider-left"><img src="image/icon-left.svg" alt="Стрелочка налево" width="22"
+          <!-- <button type="button" class="btn-slider-left"><img src="image/icon-left.svg" alt="Стрелочка налево" width="22"
               height="40"></button>
           <button type="button" class="btn-slider-right"><img src="image/icon-right.svg" alt="Стрелочка направо"
-              width="22" height="40"></button>
+              width="22" height="40"></button> -->
           <ul class="pages-slider">
-            <li class="slide">
+            <li class="slide slide-perforator">
               <h2 class="slider-title">Перфораторы</h2>
               <p class="slider-desc">Настоящие мужские игрушки</p>
-              <img src="image/slider-perforator.jpg" alt="Перфораторы" width="620" height="266">
+              <!-- <img src="image/slider-perforator.jpg" alt="Перфораторы" width="620" height="266"> -->
               <a href="catalog.html" class="button">Открыть каталог</a>
             </li>
-            <li class="slide">
+            <!-- <li class="slide slide-drill">
               <h2 class="slider-title">Дрели</h2>
               <p class="slider-desc">Соседям на радость!</p>
               <img src="image/slider-drill.jpg" alt="Дрели" width="620" height="266">
               <a href="catalog.html" class="button">Открыть каталог</a>
-            </li>
+            </li> -->
           </ul>
         </li>
       </ul>
     </section>
-    <section class="pop-products ">
+    <section class="pop-products container">
       <div class="top-section">
         <h2 class="title">Популярные товары:</h2>
         <a href="#" class="button top-section-button">Все популярные товары</a>
       </div>
       <ul class="list-products">
         <li class="product">
-          <img src="image/bfg9000.jpg" alt="Синий перфоратор Bosch bfg9000 с длинным сверлом" width="184" height="164"
-            class="catalog-item-image">
+          <p class="product-image-wrapper">
+            <img src="image/bfg9000.jpg" alt="Синий перфоратор Bosch bfg9000 с длинным сверлом" width="184" height="164"
+              class="catalog-item-image">
+          </p>
           <h4 class="name-product">Перфоратор BOSCH BFG 9000</h4>
           <span class="price">32500 Р.</span>
-          <p class="disc">25500 Р.</p>
+          <div class="disc-div">
+            <p class="disc">25500 Р.</p>
+            <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                fill="#EE3643" />
+            </svg>
+          </div>
           <!-- <ul class="buttons-catalog-item">
             <li class="button-catalog-item">
               <button type="button">
@@ -199,11 +211,20 @@
         </li>
         <li class="product">
           <span class="new">new</span>
-          <img src="image/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127" height="112"
-            class="catalog-item-image">
+          <p class="product-image-wrapper">
+            <img src="image/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127"
+              height="112" class="catalog-item-image">
+          </p>
           <h4 class="name-product">Перфоратор BOSCH BFG 3000</h4>
           <span class="price">32500 Р.</span>
-          <p class="disc">25500 Р.</p>
+          <div class="disc-div">
+            <p class="disc">25500 Р.</p>
+            <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                fill="#EE3643" />
+            </svg>
+          </div>
+
           <!-- <ul class="buttons-catalog-item">
             <li class="button-catalog-item">
               <button type="button">
@@ -220,11 +241,20 @@
           </ul> -->
         </li>
         <li class="product">
-          <img src="image/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144" height="128"
-            class="catalog-item-image">
+          <p class="product-image-wrapper">
+            <img src="image/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
+              height="128" class="catalog-item-image">
+          </p>
           <h4 class="name-product">Перфоратор BOSCH BFG 6000</h4>
           <span class="price">30500 Р.</span>
-          <p class="disc">25500 Р.</p>
+          <div class="disc-div">
+            <p class="disc">25500 Р.</p>
+            <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                fill="#EE3643" />
+            </svg>
+          </div>
+
           <!-- <ul class="buttons-catalog-item">
             <li class="button-catalog-item">
               <button type="button">
@@ -242,11 +272,20 @@
         </li>
         <li class="product">
           <span class="new">NEW</span>
-          <img src="image/bfg2000.jpg" alt="Синий перфоратор BOSCH BFG 2000 с коротким сверлом" width="127" height="112"
-            class="catalog-item-image">
+          <p class="product-image-wrapper">
+            <img src="image/bfg2000.jpg" alt="Синий перфоратор BOSCH BFG 2000 с коротким сверлом" width="127"
+              height="112" class="catalog-item-image">
+          </p>
           <h4 class="name-product">Перфоратор BOSCH BFG 2000</h4>
           <span class="price">22500 Р.</span>
-          <p class="disc">12500 Р.</p>
+          <div class="disc-div">
+            <p class="disc">25500 Р.</p>
+            <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                fill="#EE3643" />
+            </svg>
+          </div>
+
           <!-- <ul class="buttons-catalog-item">
             <li class="button-catalog-item">
               <button type="button">
@@ -312,25 +351,31 @@
         </li>
       </ul>
     </section>
-    <section class="service">
-      <h2 class="title-section">Сервисы</h2>
-      <p class="service-desc">Хороший интернет-магазин отличается от плохого не только ценами!</p>
-      <p class="service-desc">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul>
-        <li class="button-service button-service-active"><button type="button">Доставка</button></li>
-        <li class="button-service"><button type="button">Гарантия</button></li>
-        <li class="button-service"><button type="button">Кредит</button></li>
-      </ul>
-      <ul>
-        <li class="block-serivce">
-          <h3 class="title">Доставка</h3>
-          <p class="service-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          </p>
-          <p class="service-desc">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          <img src="image/btn-delivery.png" alt="Доставка" width="468" height="261">
-        </li>
-        <li class="block-serivce">
-          <h3 class="title">Гарантия</h3>
+    <div class="service-bar">
+      <section class="service container">
+
+        <h2 class="title-section">Сервисы</h2>
+        <p class="service-desc">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+        <p class="service-desc">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="unification-service">
+          <ul class="buttons-services">
+            <li class="button-service button-service-active"><button type="button">Доставка</button></li>
+            <li class="button-service"><button type="button">Гарантия</button></li>
+            <li class="button-service"><button type="button">Кредит</button></li>
+          </ul>
+          <ul class="block-services">
+            <li class="block-serivce">
+              <h3 class="service-title">Доставка</h3>
+              <div class="services-desc">
+                <p class="service-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                  бесплатно!
+                </p>
+                <p class="service-desc">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+              </div>
+              <img src="image/btn-delivery.png" alt="Доставка" width="468" height="261">
+            </li>
+            <!-- <li class="block-serivce">
+          <h3 class="service-title">Гарантия</h3>
           <p class="service-desc">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
             спровоцированного его
             возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
@@ -338,22 +383,25 @@
           <img src="image/btn-gurantee.png" alt="Гарантия" width="389" height="283">
         </li>
         <li class="block-serivce">
-          <h3 class="title">Кредит</h3>
+          <h3 class="service-title">Кредит</h3>
           <p class="service-desc">Залезть в долговую яму стало проще! </p>
           <p class="service-desc">Кредитные консультанты придут вам на помощь.</p>
           <img src="image/btn-credit.png" alt="Кредит" width="465" height="285">
           <button type="button" class="button block-serivce-button">Отправить заявку</button>
-        </li>
-      </ul>
-    </section>
-    <div class="unification">
+        </li> -->
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="unification container">
       <section>
         <h2 class="title-section">Компания "Техномарт"</h2>
-        <p class="promo-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+        <p class="promo-info promo-info-1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+          ремонта и
           строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="promo-info">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
-        <p class="promo-info">Техномарт работает со многими транспортными компаниями:</p>
+        <p class="promo-info promo-info-2">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+        <p class="promo-info promo-info-3">Техномарт работает со многими транспортными компаниями:</p>
         <ul class="transport-companies">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
@@ -375,34 +423,36 @@
     <div class="footer-top-bar">
       <section class="footer-top container">
         <h2 class="visually-hidden">Адрес и навигация</h2>
-        <a class="logo-footer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="138" height="23" viewBox="0 0 138 23" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M132.694 3.39708V22.2971H129.994V3.39708H125.194V1.29708H137.494V3.39708H132.694ZM122.299 14.5121C121.829 15.1021 121.239 15.5221 120.529 15.7721C119.819 16.0221 118.974 16.1471 117.994 16.1471C117.534 16.1471 117.014 16.1171 116.434 16.0571C115.854 15.9971 115.374 15.9271 114.994 15.8471V22.2971H112.294V1.59707C113.054 1.37707 113.819 1.22207 114.589 1.13207C115.359 1.04207 116.194 0.99707 117.094 0.99707C118.294 0.99707 119.314 1.12207 120.154 1.37207C120.994 1.62207 121.674 2.03707 122.194 2.61707C122.714 3.19707 123.094 3.96707 123.334 4.92707C123.574 5.88707 123.694 7.07707 123.694 8.49707C123.694 9.95707 123.579 11.1771 123.349 12.1571C123.119 13.1371 122.769 13.9221 122.299 14.5121ZM120.769 5.79706C120.619 5.07706 120.384 4.50706 120.064 4.08706C119.744 3.66706 119.339 3.37206 118.849 3.20206C118.359 3.03206 117.774 2.94706 117.094 2.94706H114.994V14.0471H117.094C117.774 14.0471 118.359 13.9621 118.849 13.7921C119.339 13.6221 119.744 13.3271 120.064 12.9071C120.384 12.4871 120.619 11.9171 120.769 11.1971C120.919 10.4771 120.994 9.57706 120.994 8.49706C120.994 7.41706 120.919 6.51706 120.769 5.79706ZM105.544 16.8971H99.544L98.194 22.2971H95.494L100.594 1.29708H104.494L109.594 22.2971H106.894L105.544 16.8971ZM102.604 4.29706H102.484L99.994 14.7971H105.094L102.604 4.29706ZM89.644 6.69708H89.494L85.144 19.5971H82.444L78.094 6.69708H77.944L77.044 22.2971H74.344L75.544 1.29708H78.844L83.734 15.6971H83.854L88.744 1.29708H92.044L93.244 22.2971H90.544L89.644 6.69708ZM69.484 20.3471C68.924 21.1671 68.249 21.7471 67.459 22.0871C66.669 22.4271 65.764 22.5971 64.744 22.5971C63.724 22.5971 62.819 22.4271 62.029 22.0871C61.239 21.7471 60.564 21.1671 60.004 20.3471C59.444 19.5271 59.019 18.4221 58.729 17.0321C58.439 15.6421 58.294 13.8971 58.294 11.7971C58.294 9.69707 58.439 7.95207 58.729 6.56207C59.019 5.17207 59.444 4.06707 60.004 3.24707C60.564 2.42707 61.239 1.84707 62.029 1.50707C62.819 1.16707 63.724 0.99707 64.744 0.99707C65.764 0.99707 66.669 1.16707 67.459 1.50707C68.249 1.84707 68.924 2.42707 69.484 3.24707C70.044 4.06707 70.469 5.17207 70.759 6.56207C71.049 7.95207 71.194 9.69707 71.194 11.7971C71.194 13.8971 71.049 15.6421 70.759 17.0321C70.469 18.4221 70.044 19.5271 69.484 20.3471ZM68.179 7.35707C67.969 6.19707 67.694 5.27707 67.354 4.59707C67.014 3.91707 66.614 3.44707 66.154 3.18707C65.694 2.92707 65.224 2.79707 64.744 2.79707C64.264 2.79707 63.794 2.92707 63.334 3.18707C62.874 3.44707 62.474 3.91707 62.134 4.59707C61.794 5.27707 61.519 6.19707 61.309 7.35707C61.099 8.51707 60.994 9.99707 60.994 11.7971C60.994 13.5971 61.099 15.0771 61.309 16.2371C61.519 17.3971 61.794 18.3171 62.134 18.9971C62.474 19.6771 62.874 20.1471 63.334 20.4071C63.794 20.6671 64.264 20.7971 64.744 20.7971C65.224 20.7971 65.694 20.6671 66.154 20.4071C66.614 20.1471 67.014 19.6771 67.354 18.9971C67.694 18.3171 67.969 17.3971 68.179 16.2371C68.389 15.0771 68.494 13.5971 68.494 11.7971C68.494 9.99707 68.389 8.51707 68.179 7.35707ZM51.994 12.6971H45.694V22.2971H42.994V1.29708H45.694V10.5971H51.994V1.29708H54.694V22.2971H51.994V12.6971ZM37.745 22.2971L33.995 13.2971L30.245 22.2971H27.545L32.045 11.4971L27.995 1.29708H30.695L33.995 9.69708L37.295 1.29708H39.995L35.945 11.4971L40.445 22.2971H37.745ZM15.695 1.29708H25.895V3.39708H18.395V10.2971H24.995V12.3971H18.395V20.1971H25.895V22.2971H15.695V1.29708ZM8.495 22.2971H5.795V3.39708H0.994995V1.29708H13.295V3.39708H8.495V22.2971Z"
-              fill="white" />
-          </svg>
-        </a>
-        <div class="footer-address">
-          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+        <div class="footer-section-top">
+          <a class="logo-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="138" height="23" viewBox="0 0 138 23" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M132.694 3.39708V22.2971H129.994V3.39708H125.194V1.29708H137.494V3.39708H132.694ZM122.299 14.5121C121.829 15.1021 121.239 15.5221 120.529 15.7721C119.819 16.0221 118.974 16.1471 117.994 16.1471C117.534 16.1471 117.014 16.1171 116.434 16.0571C115.854 15.9971 115.374 15.9271 114.994 15.8471V22.2971H112.294V1.59707C113.054 1.37707 113.819 1.22207 114.589 1.13207C115.359 1.04207 116.194 0.99707 117.094 0.99707C118.294 0.99707 119.314 1.12207 120.154 1.37207C120.994 1.62207 121.674 2.03707 122.194 2.61707C122.714 3.19707 123.094 3.96707 123.334 4.92707C123.574 5.88707 123.694 7.07707 123.694 8.49707C123.694 9.95707 123.579 11.1771 123.349 12.1571C123.119 13.1371 122.769 13.9221 122.299 14.5121ZM120.769 5.79706C120.619 5.07706 120.384 4.50706 120.064 4.08706C119.744 3.66706 119.339 3.37206 118.849 3.20206C118.359 3.03206 117.774 2.94706 117.094 2.94706H114.994V14.0471H117.094C117.774 14.0471 118.359 13.9621 118.849 13.7921C119.339 13.6221 119.744 13.3271 120.064 12.9071C120.384 12.4871 120.619 11.9171 120.769 11.1971C120.919 10.4771 120.994 9.57706 120.994 8.49706C120.994 7.41706 120.919 6.51706 120.769 5.79706ZM105.544 16.8971H99.544L98.194 22.2971H95.494L100.594 1.29708H104.494L109.594 22.2971H106.894L105.544 16.8971ZM102.604 4.29706H102.484L99.994 14.7971H105.094L102.604 4.29706ZM89.644 6.69708H89.494L85.144 19.5971H82.444L78.094 6.69708H77.944L77.044 22.2971H74.344L75.544 1.29708H78.844L83.734 15.6971H83.854L88.744 1.29708H92.044L93.244 22.2971H90.544L89.644 6.69708ZM69.484 20.3471C68.924 21.1671 68.249 21.7471 67.459 22.0871C66.669 22.4271 65.764 22.5971 64.744 22.5971C63.724 22.5971 62.819 22.4271 62.029 22.0871C61.239 21.7471 60.564 21.1671 60.004 20.3471C59.444 19.5271 59.019 18.4221 58.729 17.0321C58.439 15.6421 58.294 13.8971 58.294 11.7971C58.294 9.69707 58.439 7.95207 58.729 6.56207C59.019 5.17207 59.444 4.06707 60.004 3.24707C60.564 2.42707 61.239 1.84707 62.029 1.50707C62.819 1.16707 63.724 0.99707 64.744 0.99707C65.764 0.99707 66.669 1.16707 67.459 1.50707C68.249 1.84707 68.924 2.42707 69.484 3.24707C70.044 4.06707 70.469 5.17207 70.759 6.56207C71.049 7.95207 71.194 9.69707 71.194 11.7971C71.194 13.8971 71.049 15.6421 70.759 17.0321C70.469 18.4221 70.044 19.5271 69.484 20.3471ZM68.179 7.35707C67.969 6.19707 67.694 5.27707 67.354 4.59707C67.014 3.91707 66.614 3.44707 66.154 3.18707C65.694 2.92707 65.224 2.79707 64.744 2.79707C64.264 2.79707 63.794 2.92707 63.334 3.18707C62.874 3.44707 62.474 3.91707 62.134 4.59707C61.794 5.27707 61.519 6.19707 61.309 7.35707C61.099 8.51707 60.994 9.99707 60.994 11.7971C60.994 13.5971 61.099 15.0771 61.309 16.2371C61.519 17.3971 61.794 18.3171 62.134 18.9971C62.474 19.6771 62.874 20.1471 63.334 20.4071C63.794 20.6671 64.264 20.7971 64.744 20.7971C65.224 20.7971 65.694 20.6671 66.154 20.4071C66.614 20.1471 67.014 19.6771 67.354 18.9971C67.694 18.3171 67.969 17.3971 68.179 16.2371C68.389 15.0771 68.494 13.5971 68.494 11.7971C68.494 9.99707 68.389 8.51707 68.179 7.35707ZM51.994 12.6971H45.694V22.2971H42.994V1.29708H45.694V10.5971H51.994V1.29708H54.694V22.2971H51.994V12.6971ZM37.745 22.2971L33.995 13.2971L30.245 22.2971H27.545L32.045 11.4971L27.995 1.29708H30.695L33.995 9.69708L37.295 1.29708H39.995L35.945 11.4971L40.445 22.2971H37.745ZM15.695 1.29708H25.895V3.39708H18.395V10.2971H24.995V12.3971H18.395V20.1971H25.895V22.2971H15.695V1.29708ZM8.495 22.2971H5.795V3.39708H0.994995V1.29708H13.295V3.39708H8.495V22.2971Z"
+                fill="white" />
+            </svg>
+          </a>
+          <nav class="nav-footer">
+            <ul class="nav-footer-ul">
+              <li><a href="#" class="nav-footer-link">Компания</a></li>
+              <li><a href="catalog.html" class="nav-footer-link">Каталог</a></li>
+              <li><a href="#" class="nav-footer-link">Новости</a></li>
+              <li><a href="#" class="nav-footer-link">Доставка</a></li>
+              <li><a href="#" class="nav-footer-link">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="nav-footer">
-          <ul>
-            <li><a>Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+        <div class="footer-section-bottom">
+          <div class="footer-address">
+            <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+            <a href="tel:+78005558628" class="phone-footer">+7 800 555-86-28</a>
+          </div>
+          <ul class="index-nav">
+            <li><a href="#" class="index-nav-link">Материалы</a></li>
+            <li><a href="#" class="index-nav-link">Техника</a></li>
+            <li><a href="#" class="index-nav-link">Инструмент</a></li>
+            <li><a href="#" class="index-nav-link">Спецпредложения</a></li>
           </ul>
-        </nav>
-        <ul class="index-nav">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
+        </div>
       </section>
     </div>
     <div class="footer-bottom-bar">
@@ -461,7 +511,7 @@
       </section>
     </div>
   </footer>
-  <section class="modal modal-feedback">
+  <!-- <section class="modal modal-feedback container">
     <h2 class="visually-hidden">Обратная связь</h2>
     <button type="button" class="btn-close">
       <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -470,7 +520,7 @@
           fill="#EE3643" />
       </svg>
     </button>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-modal">
       <label for="name">Ваше имя:</label>
       <input type="text" placeholder="Имя Фамилия" id="name">
       <label for="email">Ваш e-mail</label>
@@ -478,10 +528,10 @@
       <label for="letter">Текст письма:</label>
       <input type="text" placeholder="В свободной форме" id="letter">
     </form>
-    <div>
+    <div class="modal-button">
       <button type="submit" class="submit">Отправить</button>
     </div>
-  </section>
+  </section> -->
 </body>
 
 </html>
