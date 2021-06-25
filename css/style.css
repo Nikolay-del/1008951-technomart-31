@@ -358,7 +358,6 @@ input[type="search"]::placeholder {
   background-color: var(--basic-dark-blue);
   color: var(--basic-white);
   box-shadow: inset 0px -5px 0px var(--basic-very-dark-blue);
-
 }
 
 .nav-ul {
@@ -1385,4 +1384,14 @@ input[id="letter"] {
 
 .btn-social:hover .btn-social-circle {
   fill: var(--basic-red);
+}
+
+.top-section-catalog {
+  background: var(--basic-background);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+
+  align-items: center;
+  height: 89px;
 }
