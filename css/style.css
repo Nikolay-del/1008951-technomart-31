@@ -840,6 +840,7 @@ input[type="search"]::placeholder {
 .unification-service {
   display: flex;
   margin-top: 70px;
+  justify-content: space-between;
 }
 
 .title-section {
@@ -1584,7 +1585,7 @@ input[id="letter"] {
   height: 36px;
   border: none;
   background: var(--basic-beige);
-  text-align: center; 
+  text-align: center;
 }
 
 .max-price {
