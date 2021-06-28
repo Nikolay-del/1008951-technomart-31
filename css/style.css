@@ -133,8 +133,6 @@ body {
 .logo {
   background: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-  /* outline: 5px solid pink;
-  outline-offset: -5px; */
   padding: 12px 56px;
   padding-bottom: 17px;
   display: flex;
@@ -148,11 +146,8 @@ body {
 .search {
   border: 0px;
   background: var(--basic-very-dark-blue);
-  /* outline: 5px solid gold;
-  outline-offset: -5px; */
   width: 261px;
   height: 100%;
-  /* margin-right: 30px; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -204,16 +199,12 @@ input[type="search"]::placeholder {
 .bookmarks {
   text-decoration: none;
   color: var(--basic-white);
-  /* outline: 5px solid rgb(0, 255, 34);
-  outline-offset: -5px; */
   margin-right: 36px;
 }
 
 .cart {
   text-decoration: none;
   color: var(--basic-white);
-  /* outline: 5px solid rgb(17, 0, 255);
-  outline-offset: -5px; */
   width: 120px;
   margin-right: 4px;
 }
@@ -265,8 +256,6 @@ input[type="search"]::placeholder {
   background: var(--basic-green);
   text-decoration: none;
   color: var(--basic-white);
-  /* outline: 5px solid rgb(255, 217, 0);
-  outline-offset: -5px; */
   padding: 11px 16px;
   padding-left: 19px;
 }
@@ -454,7 +443,6 @@ input[type="search"]::placeholder {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  /* Добавить grid-column-start и grid-column-end; */
 }
 
 .title-menu {
@@ -834,7 +822,6 @@ input[type="search"]::placeholder {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* width: 100% height: 100% for a */
 .manufacturer:active {
   opacity: 0.5;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -1112,7 +1099,6 @@ input[type="search"]::placeholder {
 
 .about-rights {
   color: var(--basic-white);
-  /* justify-content: start; */
 }
 
 .about-rights p {
@@ -1123,7 +1109,6 @@ input[type="search"]::placeholder {
 .footer-social {
   list-style-type: none;
   display: flex;
-  /* justify-content: center; */
 }
 
 
