@@ -130,13 +130,15 @@
         <form method="get" action="https://echo.htmlacademy.ru" class="filter-settings">
           <fieldset class="price-filter">
             <legend>Цена:</legend>
-            <input type="range" min="0" max="30000" id="price" name="price">
-            <label for="price">Цена</label>
-            <input type="text" id="min-price" value="0" class="min-price">
-            <label for="min-price" class="min-price"></label>
-            <span class="dash">—</span>
-            <input type="text" id="max-price" value="30000" class="max-price">
-            <label for="max-price"></label>
+            <input type="range" min="0" max="30000" id="price" name="price" class="price-range">
+            <label for="price" class="visually-hidden">Цена</label>
+            <div class="filter-price">
+              <input type="text" id="min-price" value="0" class="min-price">
+              <label for="min-price"></label>
+              <span class="dash">—</span>
+              <input type="text" id="max-price" value="30000" class="max-price">
+              <label for="max-price"></label>
+            </div>
           </fieldset>
           <fieldset class="manufacturers-filter">
             <legend>Производители:</legend>
@@ -475,7 +477,7 @@
             </li>
           </ul>
           <ul class="page-nav">
-            <li><a class="page-nav-link">1</a></li>
+            <li><a class="page-nav-link page-nav-active">1</a></li>
             <li><a class="page-nav-link" href="#">2</a></li>
             <li><a class="page-nav-link" href="#">3</a></li>
             <li><a class="page-nav-link" href="#">Следующая</a></li>
