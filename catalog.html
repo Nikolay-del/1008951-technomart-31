@@ -26,7 +26,7 @@
           </svg>
         </a>
         <form class="search">
-          <input type="search" id="search" placeholder="Поиск:">
+          <input type="search" id="search" placeholder="Поиск:" class="input-search">
           <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" class="icon-search">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" />
@@ -34,7 +34,7 @@
           <label for="search" class="visually-hidden">Форма поиска</label>
         </form>
         <ul class="nav-profile">
-          <li>
+          <li class="nav-profile-li">
             <a href="#" class="bookmarks">
               <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg" class="icon-bookmarks">
                 <path
@@ -43,7 +43,7 @@
               Закладки: 0
             </a>
           </li>
-          <li>
+          <li class="nav-profile-li">
             <a href="#" class="cart cart-catalog">
               <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
                 <g>
@@ -54,21 +54,18 @@
               Корзина: 10
             </a>
           </li>
-          <li>
+          <li class="nav-profile-li">
             <a href="#" class="arrange">Оформить заказ</a>
           </li>
         </ul>
       </div>
     </div>
-    <div class="header-bottom-catalog container">
+    <div class="container">
+    <div class="header-bottom-catalog">
       <h1 class="desc">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
       <div class="contacts-header">
         <div class="phone-header">
           <a href="tel:+78005558628" class="phone">
-            <svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" class="icon-phone">
-              <path
-                d="M15.57 18.98h-.94a14.53 14.53 0 01-9.36-4.86 16.33 16.33 0 01-4.3-9.9V3.09c.09-.77.47-1.3.9-1.75C2.43.77 3.26.04 4 .02 4.56 0 5.5.4 5.88.92c.33.44.5 1.34.66 2 .15.67.5 1.64.4 2.29-.14 1-1.48 1.43-1.87 2.17a14.03 14.03 0 006.29 7.03c.71-.4 1.35-1.57 2.33-1.6.36 0 .82.18 1.19.29.4.12.74.27 1.1.4.6.23 1.65.53 2 1.03.37.51.57 1.35.5 1.88-.17 1.04-1.89 2.2-2.9 2.57z" />
-            </svg>
             +7 800 555-86-28
           </a>
         </div>
@@ -97,7 +94,7 @@
         </ul>
       </div>
     </div>
-    <nav class="nav container">
+    <nav class="nav">
       <ul class="nav-list">
         <li><a href="index.html" class="nav-link">Главная</a></li>
         <li><a href="#" class="nav-link">Компания</a></li>
@@ -108,22 +105,23 @@
         <li><a class="nav-link" href="#">Контакты</a></li>
       </ul>
     </nav>
+  </div>
   </header>
   <main>
     <section class="nav-catalog container">
       <h2 class="visually-hidden">Навигация по каталогу</h2>
       <ul class="breadcrumbs">
-        <li><a href="index.html"><img src="image/icon-home.svg" alt="Главная" width="14" height="12"></a></li>
+        <li><a href="index.html"><img src="image/icon-home.svg" alt="Главная" width="14" height="12" class="breadcrumbs-link"></a></li>
         <li>
-          <a href="#">Каталог</a>
+          <a href="#" class="breadcrumbs-link">Каталог</a>
         </li>
-        <li><a href="#">Инструмент</a></li>
+        <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
         <li class="breadcrumbs-active"><a>Перфораторы</a></li>
       </ul>
+      <div class="top-section-catalog">
+        <h2 class="title">Перфораторы</h2>
+      </div>
     </section>
-    <div class="top-section-catalog container">
-      <h2 class="title">Перфораторы</h2>
-    </div>
     <div class="unification-catalog container">
       <section class="filter">
         <h2 class="filter-title">Фильтр:</h2>
@@ -181,7 +179,6 @@
           <button type="submit" class="btn-show">Показать</button>
         </form>
       </section>
-      <div>
         <section class="sorting">
           <h2>Сортировка:</h2>
           <div class="unification-sorting">
