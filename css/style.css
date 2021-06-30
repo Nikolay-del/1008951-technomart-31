@@ -64,9 +64,12 @@
 
 }
 
+
+
 * {
   box-sizing: border-box;
 }
+
 
 body {
   min-width: 960px;
@@ -693,7 +696,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 220px 220px 220px;
-  grid-template-rows: 318px;
+  grid-template-rows: 318px 318px 318px;
   gap: 20px;
 }
 
@@ -758,6 +761,7 @@ body {
 }
 
 
+
 .name-product {
   font-family: PTSans, Arial, sans-serif;
   font-weight: bold;
@@ -768,6 +772,10 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 7px;
+}
+
+.name-product-no-disc{
+  margin-bottom: 49px;
 }
 
 .catalog-item-image {}
@@ -1477,6 +1485,7 @@ input[id="letter"] {
   padding: 10px 19px;
   padding-right: 14px;
   margin-bottom: 28px;
+  height: 38px;
 }
 
 .sorting h2 {
@@ -1558,7 +1567,6 @@ input[id="letter"] {
 .but-sort button:focus {
   border: 0px;
   color: var(--basic-red);
-
 }
 
 .but-up {
@@ -1656,6 +1664,7 @@ input[id="letter"] {
   border: none;
   background: var(--basic-beige);
   text-align: center;
+  outline: none;
 }
 
 .max-price {
@@ -1664,6 +1673,7 @@ input[id="letter"] {
   border: none;
   background: var(--basic-beige);
   text-align: center;
+  outline: none;
 }
 
 .filter-settings legend {
@@ -1684,3 +1694,5 @@ input[id="letter"] {
   justify-content: space-between;
   align-items: center;
 }
+
+
