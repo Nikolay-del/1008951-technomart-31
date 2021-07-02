@@ -34,27 +34,17 @@
           <label for="search" class="visually-hidden">Форма поиска</label>
         </form>
         <ul class="nav-profile">
-          <li class="nav-profile-li">
+          <li class="nav-profile-item">
             <a href="#" class="bookmarks">
-              <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg" class="icon-bookmarks">
-                <path
-                  d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z" />
-              </svg>
               Закладки: 0
             </a>
           </li>
-          <li class="nav-profile-li">
+          <li class="nav-profile-item">
             <a href="#" class="cart cart-catalog">
-              <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                <g>
-                  <path
-                    d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                </g>
-              </svg>
               Корзина: 10
             </a>
           </li>
-          <li class="nav-profile-li">
+          <li class="nav-profile-item">
             <a href="#" class="arrange">Оформить заказ</a>
           </li>
         </ul>
@@ -73,24 +63,24 @@
         </div>
         <div class="nav-profile-catalog">
           <div class="block-user">
-            <a href="#" class="user-name">
+            <button href="#" class="user-name">
               <svg width="20" height="18" xmlns="http://www.w3.org/2000/svg" class="icon-user">
                 <path
                   d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" />
               </svg>
               Равшан Джамшутович
-            </a>
-            <a href="#" class="logout">
+            </button>
+            <button href="#" class="logout">
               <svg width="20" height="17" xmlns="http://www.w3.org/2000/svg" class="icon-logout">
                 <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" />
                 <path
                   d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" />
               </svg>
-            </a>
+            </button>
           </div>
           <ul class="menu-profile">
             <li><a href="#" class="btn-profile">Мои заказы</a></li>
-            <li><a href="#" class="btn-profile">Личный кабинет</a></li>
+            <li><a href="#" class="btn-profile-current">Личный кабинет</a></li>
           </ul>
         </div>
       </div>
@@ -125,7 +115,7 @@
           <a href="#" class="breadcrumbs-link">Каталог</a>
         </li>
         <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
-        <li><a class="breadcrumbs-link">Перфораторы</a></li>
+        <li class="breadcrumbs-current"><a class="breadcrumbs-link">Перфораторы</a></li>
       </ul>
       <div class="top-section-catalog">
         <h2 class="title">Перфораторы</h2>
@@ -150,24 +140,24 @@
           <fieldset class="manufacturers-filter">
             <legend>Производители:</legend>
             <ul class="manufacturers-filter-list">
-              <li>
-                <input type="checkbox" name="BOSCH" id="filter-bosch" checked>
+              <li class="filter-option filter-checkbox">
+                <input type="checkbox" name="BOSCH" id="filter-bosch" class="visually-hidden filter-input-checkbox filter-input" checked>
                 <label for="filter-bosch">BOSCH</label>
               </li>
-              <li>
-                <input type="checkbox" name="interskol" id="filter-interskol">
+              <li class="filter-option filter-checkbox">
+                <input type="checkbox" name="interskol" id="filter-interskol" class="visually-hidden filter-input-checkbox filter-input">
                 <label for="filter-interskol">Интерскол</label>
               </li>
-              <li>
-                <input type="checkbox" name="makita" id="filter-makita" checked>
+              <li class="filter-option filter-checkbox">
+                <input type="checkbox" name="makita" id="filter-makita" class="visually-hidden filter-input-checkbox filter-input" checked>
                 <label for="filter-makita">Makita</label>
               </li>
-              <li>
-                <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <li class="filter-option filter-checkbox">
+                <input type="checkbox" name="dewalt" id="filter-dewalt" class="visually-hidden filter-input-checkbox filter-input">
                 <label for="filter-dewalt">Dewalt</label>
               </li>
-              <li>
-                <input type="checkbox" name="hittachi" id="filter-hittachi">
+              <li class="filter-option filter-checkbox">
+                <input type="checkbox" name="hittachi" id="filter-hittachi" class="visually-hidden filter-input-checkbox filter-input">
                 <label for="filter-hittachi">Hitachi</label>
               </li>
             </ul>
@@ -175,12 +165,12 @@
           <fieldset class="charging-filter">
             <legend>Питание:</legend>
             <ul class="charging-filter-list">
-              <li>
-                <input type="radio" name="power-group" value="shaving" id="filter-battery" checked>
+              <li class="filter-option">
+                <input type="radio" name="power-group" value="shaving" id="filter-battery" class="visually-hidden filter-input-radio" checked>
                 <label for="filter-battery">Аккумуляторные</label>
               </li>
-              <li>
-                <input type="radio" name="power-group" value="hair-care" id="filter-network">
+              <li class="filter-option">
+                <input type="radio" name="power-group" value="hair-care" id="filter-network" class="visually-hidden filter-input-radio">
                 <label for="filter-network">Сетевые</label>
               </li>
             </ul>
@@ -219,6 +209,14 @@
           <h2 class="visually-hidden">Каталог</h2>
           <ul class="list-products-catalog">
             <li class="product">
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
                   height="128">
@@ -232,22 +230,16 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
                   height="128">
@@ -261,22 +253,16 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <span class="new">NEW</span>
               <p class="product-image-wrapper">
                 <img src="image/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
@@ -291,23 +277,17 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
               <span class="new">NEW</span>
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="144"
                   height="112">
@@ -321,22 +301,16 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
                   height="128">
@@ -350,23 +324,17 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
               <span class="new">NEW</span>
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg2000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127"
                   height="112">
@@ -379,23 +347,17 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
               <span class="new">NEW</span>
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127"
                   height="112">
@@ -409,22 +371,17 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
                   height="128">
@@ -438,23 +395,18 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
             <li class="product">
               <span class="new">NEW</span>
+              <ul class="buttons-catalog-item">
+                <li>
+                  <button type="button" class="button-buy">
+
+                    Купить
+                  </button>
+                </li>
+                <li><button type="button" class="button-bookmarks">В Закладки</button></li>
+              </ul>
               <p class="product-image-wrapper">
                 <img src="image/bfg2000.jpg" alt="Синий перфоратор Bosch BFG 2000 с коротким сверлом" width="127"
                   height="112">
@@ -467,20 +419,6 @@
                     fill="#EE3643" />
                 </svg>
               </div>
-              <!-- <ul class="buttons-catalog-item">
-            <li class="button-catalog-item">
-              <button type="button">
-                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="icon-cart-catalog">
-                  <g opacity=".3">
-                    <path
-                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" />
-                  </g>
-                </svg>
-                Купить
-              </button>
-            </li>
-            <li class="button-bookmarks"><button type="button">В Закладки</button></li>
-          </ul> -->
             </li>
           </ul>
           <ul class="page-nav">
