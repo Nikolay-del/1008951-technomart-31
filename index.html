@@ -120,10 +120,14 @@
             <a href="#" class="btn-menu">Бесплатно</a>
           </li>
           <li class="slider">
-            <!-- <button type="button" class="btn-slider-left"><img src="image/icon-left.svg" alt="Стрелочка налево" width="22"
-              height="40"></button>
-          <button type="button" class="btn-slider-right"><img src="image/icon-right.svg" alt="Стрелочка направо"
-              width="22" height="40"></button> -->
+            <button type="button" class="btn-slider-left"><svg width="22" height="40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.92.94l2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94z" fill="#fff" />
+              </svg></button>
+            <button type="button" class="btn-slider-right"><svg width="22" height="40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.08 39.06L.08 37l17.01-17.45L.02 2.06l2-2.05L21.1 19.56 2.08 39.06z" fill="#fff" />
+              </svg></button>
             <ul class="pages-slider">
               <li class="slide slide-perforator">
                 <h2 class="slider-title">Перфораторы</h2>
@@ -131,13 +135,17 @@
                 <!-- <img src="image/slider-perforator.jpg" alt="Перфораторы" width="620" height="266"> -->
                 <a href="catalog.html" class="button button-slider">Открыть каталог</a>
               </li>
-              <!-- <li class="slide slide-drill">
-              <h2 class="slider-title">Дрели</h2>
-              <p class="slider-desc">Соседям на радость!</p>
-              <img src="image/slider-drill.jpg" alt="Дрели" width="620" height="266">
-              <a href="catalog.html" class="button">Открыть каталог</a>
-            </li> -->
+              <li class="slide slide-drill slide-current">
+                <h2 class="slider-title">Дрели</h2>
+                <p class="slider-desc">Соседям на радость!</p>
+                <a href="catalog.html" class="button button-slider">Открыть каталог</a>
+              </li>
             </ul>
+            <div class="slider-controls">
+              <button type="button" class="button-slider-controls"
+                aria-label="Первый слайд"></button>
+              <button type="button" class="button-slider-controls slider-controls-current" aria-label="Второй слайд"></button>
+            </div>
           </li>
         </ul>
       </div>

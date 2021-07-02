@@ -357,7 +357,6 @@ body {
 .icon-phone {
   fill: var(--basic-icon);
   position: absolute;
-  top: ;
   left: -35px;
 }
 
@@ -685,16 +684,37 @@ body {
 
 .slide {
   height: 100%;
+  display: none;
+}
+
+.slide-current{
+  display: block;
 }
 
 .slide-perforator {
   background: url(../image/slider-perforator.jpg) no-repeat center;
 }
 
+.slide-drill{
+  background: url(../image/slider-drill.jpg) no-repeat center;
+}
+
 .btn-slider-left,
 .btn-slider-right {
   border: none;
   background: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.btn-slider-left{
+  top: 122px;
+  left: 24px;
+}
+
+.btn-slider-right{
+  top: 122px;
+  right: 21px;
 }
 
 .pages-slider {
@@ -726,6 +746,35 @@ body {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 113px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 36px;
+  left: 295px;
+  z-index: 20;
+  display: flex;
+  width: 30px;
+  justify-content: space-between;
+}
+
+.button-slider-controls{
+  outline: none;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--basic-white);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-controls-current{
+  width: 10px;
+  height: 10px;
+  background: var(--basic-red);
+  border-radius: 50%;
+  border: 3px solid var(--basic-white);
 }
 
 .pop-products {
@@ -957,6 +1006,7 @@ body {
   padding: 10px 40px 10px 53px;
   margin-bottom: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 .button-buy::before {
@@ -993,6 +1043,7 @@ body {
   color: var(--basic-dark-blue);
   background: none;
   padding: 8px 31px 6px 30px;
+  cursor: pointer;
 }
 
 .button-bookmarks:hover {
@@ -1098,6 +1149,7 @@ body {
   margin: 0;
   box-shadow: inset 0px 1px 0px #405069;
   box-shadow: inset 0px -1px 0px #293449;
+  cursor: pointer;
 
 }
 
