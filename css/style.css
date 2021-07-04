@@ -1199,6 +1199,18 @@ body {
 .button-service-active button {
   background: var(--basic-white);
   color: var(--basic-dark-blue);
+  width: 240px;
+  height: 61px;
+  border: 0px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  box-shadow: inset 0px 1px 0px #405069;
+  box-shadow: inset 0px -1px 0px #293449;
+  cursor: pointer;
+
 }
 
 .block-service-delivery {
