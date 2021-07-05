@@ -1161,7 +1161,6 @@ body {
   box-shadow: inset 0px 1px 0px #405069;
   box-shadow: inset 0px -1px 0px #293449;
   cursor: pointer;
-
 }
 
 .button-service button:focus {
@@ -1591,7 +1590,6 @@ body {
   align-items: center;
   padding: 0 80px;
   background: var(--basic-white);
-
 }
 
 .modal-map {
@@ -2082,10 +2080,10 @@ body {
 .toggle {
   cursor: pointer;
   position: absolute;
-  top: 30px;
+  top: 29px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   background: #ababab;
   border: 8px solid var(--basic-white);
