@@ -833,8 +833,9 @@ body {
   padding: 10px 40px;
 }
 
-.contacts-button {
+.feedback-button {
   padding: 10px 61px;
+  cursor: pointer;
 }
 
 .list-products {
@@ -1145,7 +1146,7 @@ body {
   padding: 0;
 }
 
-.button-service button {
+.button-service {
   width: 240px;
   height: 61px;
   background: #32425C;
@@ -1163,7 +1164,7 @@ body {
   cursor: pointer;
 }
 
-.button-service button:focus {
+.button-service:focus {
   background: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white);
   font-weight: bold;
@@ -1191,11 +1192,11 @@ body {
   right: 0;
 }
 
-.button-service button:hover {
+.button-service:hover {
   background: #293449;
 }
 
-.button-service-active button {
+.button-service-current {
   background: var(--basic-white);
   color: var(--basic-dark-blue);
   width: 240px;
@@ -1209,11 +1210,11 @@ body {
   box-shadow: inset 0px 1px 0px #405069;
   box-shadow: inset 0px -1px 0px #293449;
   cursor: pointer;
-
 }
 
 .block-service-delivery {
   position: relative;
+  display: none;
 }
 
 .block-service-delivery::after {
@@ -1228,14 +1229,29 @@ body {
 }
 
 .block-service-gurantee {
+  position: relative;
+  display: none;
+}
+
+.block-service-gurantee::after {
+  content: " ";
   background: url(../image/btn-gurantee.png) no-repeat;
-  background-position: 0 0;
+  z-index: 0;
+  width: 389px;
+  height: 283px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .block-service-credit {
   background: url(../image/btn-credit.png) no-repeat;
   background-position: 0 0;
+  display: none;
+}
 
+.block-serivce-current {
+  display: block;
 }
 
 .services-desc {
@@ -1289,6 +1305,11 @@ body {
 
 .map {
   margin-bottom: 25px;
+  border: none;
+  background: url(../image/map.jpg) no-repeat;
+  width: 300px;
+  height: 158px;
+  cursor: pointer;
 }
 
 .section-contacts {
@@ -1484,24 +1505,24 @@ body {
 
 .footer-copyright {}
 
-.btn-close {
+.modal-close {
   position: absolute;
   border: none;
   background: none;
   cursor: pointer;
 }
 
-.modal-cart>.btn-close {
+.modal-cart>.modal-close {
   top: 11px;
   right: 11px;
 }
 
-.modal-feedback>.btn-close {
+.modal-feedback>.modal-close {
   top: 14px;
   right: 11px;
 }
 
-.modal-map>.btn-close {
+.modal-map>.modal-close {
   top: 10px;
   right: 6px;
 }
@@ -1516,6 +1537,7 @@ body {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 100;
   border-top: 7px solid var(--basic-red);
+  display: none;
 }
 
 .modal-cart {
@@ -1579,12 +1601,12 @@ body {
   margin-bottom: 37px;
 }
 
+
 .modal-feedback {
   top: auto;
   width: 620px;
   bottom: 352px;
   padding-top: 39px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 80px;
@@ -1595,7 +1617,18 @@ body {
   top: auto;
   bottom: 110px;
   width: 943px;
+
   display: none;
+}
+
+.modal-show {
+  display: flex;
+  animation: bounce 0.6s;
+}
+
+.modal-show-block {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .modal-feedback input {
@@ -1638,7 +1671,7 @@ body {
   padding-left: 12px;
 }
 
-.form-modal {
+.form-feedback {
   width: 460px;
   display: flex;
   flex-wrap: wrap;
@@ -1667,7 +1700,50 @@ body {
   background: var(--basic-gray-button);
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .block-user {
   background: var(--basic-white);
@@ -1878,6 +1954,7 @@ body {
   text-transform: uppercase;
   width: 100%;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .button-continue-shop {
@@ -1949,6 +2026,7 @@ body {
   fill: var(--basic-icon);
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 .but-up:hover,
@@ -1980,6 +2058,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .but-sort {
