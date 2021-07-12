@@ -1,12 +1,19 @@
-const cartBut = document.querySelector(".button-buy");
+const cartBut = document.querySelectorAll(".button-buy");
 const cartPopup = document.querySelector(".modal-cart");
 const cartClose = cartPopup.querySelector(".modal-close");
 const cartContinue = cartPopup.querySelector(".button-continue-shop");
 
-cartBut.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.add("modal-show-block");
-});
+for (let i = 0; i < cartBut.length; i++) {
+  cartBut[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show-block");
+  })
+}
+
+// cartBut.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   cartPopup.classList.add("modal-show-block");
+// });
 
 cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
