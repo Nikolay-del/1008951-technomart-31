@@ -755,7 +755,7 @@ img {
   padding: 0;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 118px;
+  margin-bottom: 120px;
 }
 
 .slider-controls {
@@ -889,8 +889,7 @@ img {
   line-height: 30px;
   color: var(--basic-dark-blue);
   margin: 0;
-  margin-left: 28px;
-  margin-bottom: 5px;
+  margin-left: 29px;
 }
 
 .service-title {
@@ -1554,12 +1553,12 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   margin: auto;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 100;
   border-top: 7px solid var(--basic-red);
   display: none;
+  transform: translate(-50%, -50%);
 }
 
 .modal-cart {
@@ -1719,22 +1718,21 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, 30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -10px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
-
 @keyframes shake {
 
   0%,
@@ -2208,7 +2206,7 @@ img {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 37.15px;
+  margin-bottom: 14.15px;
 }
 
 .manufacturers-filter-list {
