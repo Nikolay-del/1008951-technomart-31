@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/min-normalize.css">
   <link rel="stylesheet" href="css/min-style.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png" type="image/svg+xml">
@@ -141,10 +141,10 @@
               </div>
             </div>
             <div class="filter-price">
-              <input type="text" id="min-price" value="0" class="min-price">
+              <input type="text" id="min-price" value="0" class="min-price" aria-label="Установить минимальную цену">
               <label for="min-price"></label>
               <span class="dash">—</span>
-              <input type="text" id="max-price" value="30000" class="max-price">
+              <input type="text" id="max-price" value="30000" class="max-price" aria-label="Установить максимальную цену">
               <label for="max-price"></label>
             </div>
           </fieldset>
@@ -201,29 +201,29 @@
           <h2>Сортировка:</h2>
           <div class="unification-sorting">
             <ul class="but-sort-list">
-              <li class="by-price"><button type="button" class="but-sort-active but-sort"
-                  aria-label="Сортировать по цене">По цене</button></li>
-              <li class="by-type"><button type="button" class="but-sort" aria-label="Сортировать по типу">По
-                  типу</button></li>
-              <li class="by-function"><button type="button" class="but-sort" aria-label="Сортировать по функционалу">По
-                  функционалу</button></li>
+              <li class="by-price"><a href="#" class="but-sort but-sort-active"
+                  aria-label="Сортировать по цене">По цене</a></li>
+              <li class="by-type"><a href="#" class="but-sort" aria-label="Сортировать по типу">По
+                  типу</a></li>
+              <li class="by-function"><a href="#" class="but-sort" aria-label="Сортировать по функционалу">По
+                  функционалу</a></li>
             </ul>
             <ul class="but-up-down">
               <li>
-                <button type="button" class="but-up but-up-down-active">
+                <a href="#" class="but-up but-up-down-active" aria-label="Сортировать по убыванию">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" aria-hidden="true"
                     focusable="false">
                     <path d="M5.5 10L0 0H11" />
                   </svg>
-                </button>
+                </a>
               </li>
               <li>
-                <button type="button" class="but-down">
+                <a href="#" class="but-down" aria-label="Соритровать по возрастанию">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" aria-hidden="true"
                     focusable="false">
                     <path d="M5.5 10L0 0H11" />
                   </svg>
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -232,15 +232,15 @@
           <h2 class="visually-hidden">Каталог</h2>
           <ul class="list-products-catalog">
             <li class="product">
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><a href="#" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
+          </ul>
               <p class="product-image-wrapper">
                 <img src="img/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
                   height="128">
@@ -257,15 +257,15 @@
               </div>
             </li>
             <li class="product">
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><a href="#" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
+          </ul>
               <p class="product-image-wrapper">
                 <img src="img/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
                   height="128">
@@ -282,15 +282,15 @@
               </div>
             </li>
             <li class="product">
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><a href="#" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
+          </ul>
               <span class="new">NEW</span>
               <p class="product-image-wrapper">
                 <img src="img/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
@@ -309,15 +309,15 @@
             </li>
             <li class="product">
               <span class="new">NEW</span>
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><a href="#" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
+          </ul>
               <p class="product-image-wrapper">
                 <img src="img/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="144"
                   height="112">
@@ -334,15 +334,15 @@
               </div>
             </li>
             <li class="product">
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><a href="#" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
+          </ul>
               <p class="product-image-wrapper">
                 <img src="img/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
                   height="128">
@@ -360,15 +360,15 @@
             </li>
             <li class="product">
               <span class="new">NEW</span>
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><a href="#" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
+          </ul>
               <p class="product-image-wrapper">
                 <img src="img/bfg2000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127"
                   height="112">
@@ -385,15 +385,15 @@
             </li>
             <li class="product">
               <span class="new">NEW</span>
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</button>></li>
+          </ul>
               <p class="product-image-wrapper">
                 <img src="img/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127"
                   height="112">
@@ -437,15 +437,15 @@
             </li>
             <li class="product">
               <span class="new">NEW</span>
-              <ul class="buttons-catalog-item">
-                <li>
-                  <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
-                    Купить
-                  </button>
-                </li>
-                <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                    Закладки</button></li>
-              </ul>
+           <ul class="buttons-catalog-item">
+            <li>
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
+                Купить
+              </a>
+            </li>
+            <li><a href="#" class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
+          </ul>
               <p class="product-image-wrapper">
                 <img src="img/bfg2000.jpg" alt="Синий перфоратор Bosch BFG 2000 с коротким сверлом" width="127"
                   height="112">
@@ -465,7 +465,7 @@
             <li><a class="page-nav-link page-nav-active">1</a></li>
             <li><a class="page-nav-link" href="#" aria-label="Перейти на вторую страницу каталога">2</a></li>
             <li><a class="page-nav-link" href="#" aria-label="Перейти на третью страницу каталога">3</a></li>
-            <li><a class="page-nav-link" href="#" aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
+            <li><a class="page-nav-link page-nav-link-next" href="#" aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
           </ul>
         </section>
       </div>

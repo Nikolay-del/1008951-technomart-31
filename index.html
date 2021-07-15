@@ -5,8 +5,8 @@
 
   <meta charset="utf-8">
   <title>Техномарт. Главная страница</title>
+  <link rel="stylesheet" href="css/min-normalize.css">
   <link rel="stylesheet" href="css/min-style.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png" type="image/svg+xml">
@@ -144,9 +144,9 @@
               </li>
             </ul>
             <div class="slider-controls">
-              <button type="button" class="button-slider-controls"
-                aria-label="Первый слайд"></button>
-              <button type="button" class="button-slider-controls slider-controls-current" aria-label="Второй слайд"></button>
+              <button type="button" class="button-slider-controls" aria-label="Первый слайд"></button>
+              <button type="button" class="button-slider-controls slider-controls-current"
+                aria-label="Второй слайд"></button>
             </div>
           </li>
         </ul>
@@ -161,12 +161,12 @@
         <li class="product">
           <ul class="buttons-catalog-item">
             <li>
-              <button type="button" class="button-buy" aria-label="Добавить товар в коризну">
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
                 Купить
-              </button>
+              </a>
             </li>
-            <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                Закладки</button></li>
+            <li><a class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
           </ul>
           <p class="product-image-wrapper">
             <img src="img/bfg9000.jpg" alt="Синий перфоратор Bosch bfg9000 с длинным сверлом" width="184" height="164"
@@ -187,16 +187,16 @@
           <span class="new">new</span>
           <ul class="buttons-catalog-item">
             <li>
-              <button type="button" class="button-buy" aria-label="Добавить товар в корзину">
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
                 Купить
-              </button>
+              </a>
             </li>
-            <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                Закладки</button></li>
+            <li><a class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
           </ul>
           <p class="product-image-wrapper">
-            <img src="img/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127"
-              height="112" class="catalog-item-image">
+            <img src="img/bfg3000.jpg" alt="Синий перфоратор Bosch BFG 3000 с коротким сверлом" width="127" height="112"
+              class="catalog-item-image">
           </p>
           <h4 class="name-product">Перфоратор BOSCH BFG 3000</h4>
           <span class="price">32500 Р.</span>
@@ -212,16 +212,16 @@
         <li class="product">
           <ul class="buttons-catalog-item">
             <li>
-              <button type="button" class="button-buy" aria-label="Добавить товар в корзину">
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
                 Купить
-              </button>
+              </a>
             </li>
-            <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                Закладки</button></li>
+            <li><a class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
           </ul>
           <p class="product-image-wrapper">
-            <img src="img/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144"
-              height="128" class="catalog-item-image">
+            <img src="img/bfg6000.jpg" alt="Синий перфоратор Bosch BFG 6000 с коротким сверлом" width="144" height="128"
+              class="catalog-item-image">
           </p>
           <h4 class="name-product">Перфоратор BOSCH BFG 6000</h4>
           <span class="price">30500 Р.</span>
@@ -238,16 +238,16 @@
           <span class="new">NEW</span>
           <ul class="buttons-catalog-item">
             <li>
-              <button type="button" class="button-buy" aria-label="Добавить товар в корзину">
+              <a href="cart.html" class="button-buy" aria-label="Добавить товар в коризну">
                 Купить
-              </button>
+              </a>
             </li>
-            <li><button type="button" class="button-bookmarks" aria-label="Добавить товар в закладки">В
-                Закладки</button></li>
+            <li><a class="button-bookmarks" aria-label="Добавить товар в закладки">В
+                Закладки</a></li>
           </ul>
           <p class="product-image-wrapper">
-            <img src="img/bfg2000.jpg" alt="Синий перфоратор BOSCH BFG 2000 с коротким сверлом" width="127"
-              height="112" class="catalog-item-image">
+            <img src="img/bfg2000.jpg" alt="Синий перфоратор BOSCH BFG 2000 с коротким сверлом" width="127" height="112"
+              class="catalog-item-image">
           </p>
           <h4 class="name-product">Перфоратор BOSCH BFG 2000</h4>
           <span class="price">22500 Р.</span>
@@ -374,7 +374,7 @@
         <h2 class="title-section">Контакты</h2>
         <p class="office-map">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
         <button class="map" type="button" aria-label="Перейти на большую карту"></button>
-        <button class="button feedback-button" type="button">Заблудились? Напишите нам!</button>
+        <a href="feedback.html" class="button feedback-button">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
